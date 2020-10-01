@@ -14,39 +14,42 @@ const show = document.getElementById('show')
 const slides = document.getElementById('slides')
 const main = document.getElementById('main')
 
-    let counter = 1;
+    let counter1 = 1;
+    let counter2 = 1;
+    let counter3 = 1;
+    let counter4 = 1;
     let albumimg = [];
     let myvar
 
     const hoverFun = (alt) => {
         switch (alt){
             case 'animal':
-                if (counter >= imganimal.length){
-                    counter=0
+                if (counter1 >= imganimal.length){
+                    counter1=0
                 }
-                animimg.src = `./pcs/${imganimal[counter]}`
-                ++counter
+                animimg.src = `./pcs/${imganimal[counter1]}`
+                ++counter1
             break
             case 'decoration':
-                if (counter >= imgdecoration.length){
-                    counter=0
+                if (counter2 >= imgdecoration.length){
+                    counter2=0
                 }
-                decoreimg.src = `./pcs/${imgdecoration[counter]}`
-                ++counter
+                decoreimg.src = `./pcs/${imgdecoration[counter2]}`
+                ++counter2
             break
             case 'fruit':
-                if (counter >= imgfruit.length){
-                    counter=0
+                if (counter3 >= imgfruit.length){
+                    counter3=0
                 }
-                fruteimg.src = `./pcs/${imgfruit[counter]}`
-                ++counter
+                fruteimg.src = `./pcs/${imgfruit[counter3]}`
+                ++counter3
             break
             case 'nature':
-                if (counter >= imgnature.length){
-                    counter=0
+                if (counter4 >= imgnature.length){
+                    counter4=0
                 }
-                natureimg.src = `./pcs/${imgnature[counter]}`
-                ++counter
+                natureimg.src = `./pcs/${imgnature[counter4]}`
+                ++counter4
             break
         }
     }
